@@ -1,0 +1,189 @@
+header{background-color: #F4E4D4;position: relative;display: flex;justify-content: center;height:500px;overflow: hidden;}
+
+h1 {position: relative;display: flex;justify-content: center;align-items: center;height: 150px;overflow: hidden;font-size: 70px;font-family: fantasy;font-style: oblique;color: #ee1669; background-color:#f6a51e ;}
+h2 {position: relative;display: flex;justify-content: center;align-items: center;height: 100px;overflow: hidden;font-size: 50px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;color: #edc91b; background-color: #18aba0 ;}
+h3 {position: relative;display: flex;justify-content: center;align-items: center;height: 75px;overflow: hidden;text-align: center;font-size: 25px;padding: 40px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;color: #3d029c;background-color:rgb(240, 220, 193);}
+p {text-align: center;font-size: 25px;padding: 40px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;color: #3d029c;}
+img
+footer{position: relative;display: flex;justify-content: center;align-items: center;height: 150px;overflow: hidden;font-size: 70px;font-family: fantasy;font-style: oblique;color: #ee1669; background-color:#f6a51e ;}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  text-align: center;
+}
+
+.carrusel {
+    position: relative;
+    max-width: 800px;
+    margin:auto;
+    overflow: hidden;
+}
+
+.carrusel-items {
+    display: flex;
+    height: auto;
+    width: 700%; /* Ancho total para 5 imágenes */
+    animation: desplazamiento 15s infinite; /* Cambiar cada 5 segundos */
+}
+
+.carrusel-item {
+    min-width: 10%; /* Cada imagen ocupa el 20% del ancho */
+    height: 700px; /* Altura fija para todas las imágenes */
+    overflow: hidden; /* Ocultar el desbordamiento */
+}
+
+.carrusel-item img {
+    width: 100%;
+    height: 100%; /* Altura 100% para ajustar al contenedor */
+    object-fit: cover; /* Mantener la proporción y cubrir el contenedor */
+}
+
+input[type="radio"] {
+    display: none; /* Ocultar los radio buttons */
+}
+
+/* Animación para el desplazamiento de imágenes */
+@keyframes desplazamiento {
+    10% { transform: translateX(10); }
+    20% { transform: translateX(20); }
+    25% { transform: translateX(-30%); }
+    45% { transform: translateX(-40%); }
+    50% { transform: translateX(-50%); }
+    70% { transform: translateX(-60%); }
+    75% { transform: translateX(-70%); }
+    95% { transform: translateX(-80%); }
+    100% { transform: translateX(-90%); }
+}
+
+/* Flechas de navegación */
+label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+label.prev {
+    left: 10px;
+}
+
+label.next {
+    right: 10px;
+}
+
+/* Efecto de hover en las flechas */
+label:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+footer {
+    background-color: #87CEEB; /* Fondo celeste */
+    padding: 10px 0; /* Espaciado vertical */
+    text-align: center; /* Centrar el contenido */
+}
+
+.contact-images {
+    display: flex; /* Usar flexbox para centrar las imágenes */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.contact-images img {
+    max-width: 50px; /* Ajustar el tamaño de las imágenes */
+    height: auto; /* Mantener la relación de aspecto */
+}
+
+.form{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #00aaff; /* Borde del recuadro */
+    border-radius: 10px; /* Esquinas redondeadas */
+    background-color: #e0f7fa; /* Color de fondo del formulario */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra del recuadro */
+   
+}
+
+h2 {
+    text-align: center;
+    color:#007bb8;
+}
+
+.form-group {
+    display: flex; /* Habilita flexbox para cada grupo */
+    flex-direction: column; /* Coloca las etiquetas y entradas en columna */
+}
+
+.form-2 {
+    color: #007bb8; /* Color de las etiquetas */
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo */
+}
+
+.form-control {
+    border: 1px solid #00aaff; /* Borde de los campos de entrada */
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: border-color 0.3s; /* Transición suave */
+    width: 100%; /* Asegura que el campo ocupe todo el ancho */
+    padding: 10px; /* Espaciado interno del campo */
+}
+
+.form-control:focus {
+    border-color: #007bb8; /* Color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al enfocar */
+}
+
+.btn {
+    background-color: #00aaff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 10px 20px; /* Espaciado interno */
+    transition: background-color 0.3s; /* Transición suave */
+    width: 100%; /* Asegura que el botón ocupe todo el ancho */
+}
+
+.btn:hover {
+    background-color: #007bb8; /* Color de fondo al pasar el ratón */
+}
+
+.btn:focus {
+    outline: none; /* Sin contorno al enfocar */
+}
+
+.btn:hover {
+    background-color: #007bb8; /* Color de fondo al pasar el ratón */
+}
+
+.btn:focus {
+    outline: none; /* Sin contorno al enfocar */
+}
+/* Estilo para la barra de navegación */
+.navbar {
+    background-color: #036b94; /* Color de fondo celeste */
+}
+
+/* Estilo para los enlaces de la barra de navegación */
+.nav-link {
+    background-color: #00BFFF; /* Color de fondo de los botones (celeste oscuro) */
+    color: #0BFF; /* Color de texto blanco */
+    padding: 10px 15px; /* Añadir relleno a los botones */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para los enlaces al hacer hover */
+.nav-link:hover {
+    background-color: #0080FF; /* Color más oscuro al hacer hover */
+    color: #ffffff; /* Mantener el texto blanco al hacer hover */
+}
+
+/* Estilo para el botón de navegación que está activo */
+.nav-link.active {
+    background-color: #0056b3; /* Color más oscuro para el botón activo */
+    color: #ffffff; /* Texto blanco */
+}
